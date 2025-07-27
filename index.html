@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derin's Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes vroom {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+        }
+        .f1-card:hover .f1-image {
+            animation: vroom 0.5s ease-in-out infinite;
+        }
+        @keyframes rock {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(2deg); }
+        }
+        .sailing-card:hover .sailing-image {
+            animation: rock 1s ease-in-out infinite;
+        }
+        @keyframes nock {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .archery-card:hover .archery-image {
+            animation: nock 0.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="text-center py-12">
+        <img src="derin.png" alt="Derin's Games Logo" class="mx-auto h-auto max-w-lg">
+        <h1 class="text-5xl font-bold mt-6">Derin's Games</h1>
+        <p class="text-xl text-gray-400 mt-2">A collection of classic and modern games</p>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="games/2048/index.html" class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="h-48 bg-yellow-500 flex items-center justify-center text-6xl font-bold text-white">2048</div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">2048</h3>
+                    <p class="text-gray-400 mt-2">A number puzzle game</p>
+                </div>
+            </a>
+            <a href="games/pacman/index.html" class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="h-48 bg-black flex items-center justify-center text-6xl text-yellow-400">●</div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">Pac-Man</h3>
+                    <p class="text-gray-400 mt-2">The classic arcade game</p>
+                </div>
+            </a>
+            <a href="games/flappy-bird/index.html" class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="h-48 bg-blue-400 flex items-center justify-center text-6xl">🐦</div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">Flappy Bird</h3>
+                    <p class="text-gray-400 mt-2">A simple and addictive game</p>
+                </div>
+            </a>
+            <a href="games/snake/index.html" class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="h-48 bg-green-500 flex items-center justify-center text-6xl">🐍</div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">Snake</h3>
+                    <p class="text-gray-400 mt-2">The classic snake game</p>
+                </div>
+            </a>
+            <a href="games/dumptrump/index.html" class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="h-48 bg-red-500 flex items-center justify-center">
+                    <img src="assets/images/trump.png" alt="Dunk The Trump" class="h-48 w-full object-contain">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">Dunk The Trump</h3>
+                    <p class="text-gray-400 mt-2">A satirical game</p>
+                </div>
+            </a>
+            <a href="games/dino/index.html" class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="assets/images/dino.png" alt="T-Rex Runner" class="h-48 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">T-Rex Runner</h3>
+                    <p class="text-gray-400 mt-2">The classic offline game</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="mt-16 text-center">
+            <h2 class="text-3xl font-bold mb-8">Derin's Corner</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 f1-card">
+                    <img src="https://images.unsplash.com/photo-1589134220273-6a8a14145119?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="F1 Racing" class="rounded-lg mb-4 f1-image">
+                    <h3 class="text-xl font-bold">F1 Racing</h3>
+                    <p class="text-gray-400">Latest Race: Monaco Grand Prix</p>
+                    <div class="text-left mt-4">
+                        <p><strong>Max Verstappen:</strong> P1</p>
+                        <p><strong>Lando Norris:</strong> P2</p>
+                        <p><strong>Charles Leclerc:</strong> P3</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 sailing-card">
+                    <img src="https://images.unsplash.com/photo-1593813353232-59444315b6b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sailing" class="rounded-lg mb-4 sailing-image">
+                    <h3 class="text-xl font-bold">Sailing</h3>
+                    <p class="text-gray-400">Adventures on the high seas.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 archery-card">
+                    <img src="https://images.unsplash.com/photo-1589134220273-6a8a14145119?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Archery" class="rounded-lg mb-4 archery-image">
+                    <h3 class="text-xl font-bold">Archery</h3>
+                    <p class="text-gray-400">High Scores:</p>
+                    <div class="text-left mt-4">
+                        <p><strong>Derin:</strong> 285</p>
+                        <p><strong>John:</strong> 270</p>
+                        <p><strong>Jane:</strong> 265</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <h2 class="text-3xl font-bold mb-8">Advertisements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold">Ad Placeholder 1</h3>
+                    <p class="text-gray-400">This could be your ad!</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold">Ad Placeholder 2</h3>
+                    <p class="text-gray-400">Contact us for advertising opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
